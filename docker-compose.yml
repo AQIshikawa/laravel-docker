@@ -38,12 +38,14 @@ services:
       - TZ=${TZ}
 
   db:
-    image: mysql:8.0.19
+    build:
+      context: ./docker/mysql
+      dockerfile: DockerfileDB
     ports:
       - 13306:3306
     volumes:
       - db-store:/var/lib/mysql
-      - ./logs:/var/log/mysql
+      - db-log-store:/var/log/mysql
       - ./docker/mysql/my.cnf:/etc/mysql/conf.d/my.cnf
     environment:
       - MYSQL_DATABASE=${DB_NAME}
@@ -55,3 +57,4 @@ services:
 volumes:
   db-store:
     driver: local
+  db-log-store:
