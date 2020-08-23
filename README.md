@@ -1,7 +1,7 @@
 # Vue.js + Laravel API + Docker
 
 ## About
-Docker template for Gizson project.
+Docker template for Laravel project.
 
 ## Stack includes
 * Vue.js
@@ -13,8 +13,8 @@ Docker template for Gizson project.
 
 **1. Clone the repository and enter its folder**
 ```
-git clone https://github.com/gizumo-inc/gizhack_team_k.git your-app-folder
-cd your-app-folder
+git clone https://github.com/AQIshikawa/laravel-docker.git
+cd laravel-docker
 ```
 
 **2. Copy environment files**
