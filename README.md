@@ -83,5 +83,5 @@ docker-compose exec app npm run dev
 docker-compose exec app php artisan migrate
 ```
 
-Now, you can access the URL http://localhost:8080 and can see Top page.
+Now, you can access the URL http://hogehoge and can see Top page.
 
