@@ -1,5 +1,5 @@
 FROM php:7.4.2-fpm-alpine
-LABEL maintainer "gizumo"
+LABEL maintainer "laravel-project"
 
 ARG TZ
 ENV COMPOSER_ALLOW_SUPERUSER 1
